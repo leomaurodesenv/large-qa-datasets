@@ -25,6 +25,7 @@ Datasets are sorted by year of publication.
 - [Natural Questions](#natural-questions) (2019 | 323,045 real queries to Google Search)
 - [Compositional Freebase Questions](#compositional-freebase-questions-cfq) (2020 | 239,357 automatically generated compositional questions)
 - [AdversarialQA](#adversarialqa) (2020 | 36,000 hard questions for QA models)
+- [QASports](#qasports) (2023 | ~1.5 million questions about the most popular sports in the world)
 
 
 #### WebQuestions
@@ -371,6 +372,26 @@ Due to the nature of the approach, the generated questions start with a wh-word 
     {"question": "what happened 115 years prior to kenya having a ruling which allows splitting the land and electing leaders for the lands?", "answers": [{"answer_start": 656, "text": "The British Empire established the East Africa Protectorate"}], ...},
     {"question": "what happened 47 years before kenya created a ruling which allows splitting the land and electing leaders for the lands?", "answers": [{"answer_start": 778, "text": "Kenya obtained independence"}], ...},
     {"question": "what happened 68 years before Kenya achieved freedom from colonization?", "answers": [{"answer_start": 656,"text": "The British Empire established the East Africa Protectorate in 1895"}], ...}]}
+
+
+#### QASports
+*Jardim et al.* \
+**PDF:** <https://doi.org/10.5753/dsw.2023.233602>\
+**Dataset:** <https://github.com/leomaurodesenv/qasports-dataset-scripts/> \
+**Year of Publication:** 2023 \
+**Size:** 1,550,981 \
+**Data Collection:** QASports is a dataset containing over 1.$ million triples of questions, answers, and context derived from three popular sports Wiki: soccer, American football, and basketball. Jardim et al. processes data collection and the generation of questions and answers using language models. \
+**Examples:**
+
+    Field Name,  Value
+    id_qa,  26753871865232360538470338478831645379
+    context_id,  160771201491002921663457071753730101259
+    context,  "January 29: Los Angeles Lakers shooting guard Kobe Bryant with his 9,936th field goal broke the Lakers all-time field goals record held by Kareem Abdul-Jabbar just one day after breaking Jerry West's team free throw record[31] in a 106-101 win over the Minnesota Timberwolves."
+    question,  How many field goals did Kobe Bryant score?
+    answer,  "{'text': ""9,936"", 'offset': [68, 73]}"
+    context_title,  2011–12 NBA season
+    context_categories,  "2011–12 NBA season, NBA season"
+    url,  https://basketball.fandom.com/wiki/2011-12_NBA_season
 
 
 ## Smaller QA datasets
